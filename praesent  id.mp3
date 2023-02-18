@@ -1,0 +1,11 @@
+const listItem = document.createElement('li');
+const deleteButton = document.createElement('button');
+const editButton = document.createElement('button');
+deleteButton.innerText = 'Delete';
+editButton.innerText = 'Edit';
+listItem.appendChild(deleteButton);
+listItem.appendChild(editButton);
+
+deleteButton.addEventListener('click', function() {
+  listItem.remove();
+});
